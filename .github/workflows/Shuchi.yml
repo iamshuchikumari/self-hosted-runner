@@ -20,22 +20,22 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
 
-      - name: Step 1 - Log the pre-build disc space
-        run: ls -a
+      #- name: Step 1 - Log the pre-build disc space
+      #  run: ls -a
         
       - name: step 2 - Checkout the main GitHub branch
         uses: actions/checkout@v3 
         
-      - name: Step 3 - Set up JDK 1.8
-        uses: actions/setup-java@v1
-        with: 
-          java-version: 1.8
+      #- name: Step 3 - Set up JDK 1.8
+       # uses: actions/setup-java@v1
+       # with: 
+        #  java-version: 1.8
 
-      - name: Step 4 - Build your your Jakarta web app with Maven
-        run: echo mvn -B package --file pom.xml
+     # - name: Step 4 - Build your your Jakarta web app with Maven
+     #   run: echo mvn -B package --file pom.xml
           
-      - name: Step 5 - List Ubuntu Environment Variables
-        run: env
+      #- name: Step 5 - List Ubuntu Environment Variables
+       # run: env
         
       - name: Step 6 - Performing Task from shell script
         run: sh ./.github/script.sh
