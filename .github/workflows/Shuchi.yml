@@ -38,5 +38,5 @@ jobs:
        # run: env
         
       - name: Step 6 - Performing Task from shell script
-        run: sh ./.github/script.sh
-        shell: bash
+        run:  ./.github/script.bat
+        #shell: bash
